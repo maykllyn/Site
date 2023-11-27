@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/logstyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça Login</h1>
+            <h1>Desenvolva seu portifólio</h1>     
+        </div>
+        <div class="right-login"> 
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    
+                  <form id="loginForm">
+
+                
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário" id="login" required>
+                
+                
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha" id="senha" required>
+                
+                <button class="btn-login" type="submit" id="loginButton"onclick="verificarLogin()">Login</button> <!--onclick="logar(); return false"-->
+                <a href="cadastro.html">Não tem Cadastro</a>
+                </form>
+        
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+<script src="JavaScript_mkm/Verificação_mkm.js"></script>
+</html>

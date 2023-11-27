@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/logstyle.css">
+    <title>Login</title>
+</head>
+<body>
+    
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça seu Cadastro</h1>
+            <h1>Desenvolva seu portifólio</h1>     
+        </div>
+        <div class="right-login"> 
+            <div class="card-login">
+
+                
+                <h1>Preencha os Campos</h1>
+                
+                <form id="cadastroForm"id="cadastroForm" onsubmit="return validarForm()">
+                    <div class="textfield">
+                        <label for="idade">Idade:</label>
+                    <input type="number" id="idade" size="40" required>
+                        
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" size="40" required>
+                 
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" size="40" required>
+                 
+            
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" size="40" required>
+                    </div>
+                </form>
+
+                <form method="get" action=".">
+                    <div class="textfield">
+                    <label>Cep:</label>
+                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                           onblur="pesquisacep(this.value);" />
+                    <label>Rua:</label>
+                    <input name="rua" type="text" id="rua" size="60">
+                    <label>Bairro:</label>
+                    <input name="bairro" type="text" id="bairro" size="40">
+                    <label>Cidade:</label>
+                    <input name="cidade" type="text" id="cidade" size="40">
+                    <label>Estado:</label>
+                    <input name="uf" type="text" id="uf" >
+        
+                </div>
+                  </form>
+
+                
+
+                
+                    <button class="btn-login" type="submit" value="Cadastrar" onclick="cadastrarUsuario()">Cadastrar</button>
+                   
+                </div>
+                
+
+        </div>
+    </div>
+   
+</body>
+ <script src="JavaScript_mkm/cadastro.js"></script>
+</html>
